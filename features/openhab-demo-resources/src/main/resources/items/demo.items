@@ -123,4 +123,10 @@ Location DemoLocation           "Brandenburg Gate Berlin"
 Number Wifi_Level               "Wifi Level [%d/4]"     <signal>        (FF_Office)
 String ImageURL                 "Image URL [%s]"
 
+/* CoAP items */
+
+Switch Led1                     "Led 1"             { channel="coap:coapdevice:mydevice:led1" }
+Switch Led2                     "Led 2"             { channel="coap:coapdevice:mydevice:led2" }
+String String1                  "String 1"          { channel="coap:coapdevice:mydevice:string1" }
+
 // vim: syntax=Xtend syntax=openhab

@@ -72,6 +72,13 @@ sitemap demo label="Main Menu"
                 Image url="http://fpoimg.com/320x240?text=openHAB" item=ImageURL
 			}
 		}
+		Text label="CoAP Test" icon="chart" {
+            Frame label="Test items" {
+                Switch item=Led1 label="Led 1"
+                Switch item=Led2 label="Led 2"
+                Text   item=String1 label="String 1"
+            }
+        }
 	}
 }
 
