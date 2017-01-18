@@ -3,7 +3,7 @@
 //astro:moon:home  [ geolocation="52.5200066,13.4049540", interval=60 ]
 //ntp:ntp:demo [ hostname="nl.pool.ntp.org", refreshInterval=60, refreshNtp=30 ]
 
-coap:coapdevice:mydevice [ip="localhost", enableDtls="false", location="Room", refresh=30]{
+coap:coapdevice:mydevice [ip="localhost", enableDtls="false", identity="Client_identity", secret="secretPSK", location="Room", refresh=30]{
     Channels:
         Type switch : led1 "Led1"
         Type switch : led2 "Led2"
