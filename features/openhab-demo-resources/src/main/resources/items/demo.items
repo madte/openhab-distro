@@ -125,8 +125,12 @@ String ImageURL                 "Image URL [%s]"
 
 /* CoAP items */
 
-Switch Led1                     "Led 1"             { channel="coap:coapdevice:mydevice:led1" }
-Switch Led2                     "Led 2"             { channel="coap:coapdevice:mydevice:led2" }
-String String1                  "String 1"          { channel="coap:coapdevice:mydevice:string1" }
+Switch Led1                     "Led 1"             { channel="coap:coapdevice:dtlsdevice1:led1" }
+Switch Led2                     "Led 2"             { channel="coap:coapdevice:dtlsdevice1:led2" }
+String String1                  "String 1"          { channel="coap:coapdevice:dtlsdevice1:string1" }
+
+Switch Led3                     "Led 3"             { channel="coap:coapdevice:device1:led1" }
+Switch Led4                     "Led 4"             { channel="coap:coapdevice:device1:led2" }
+String String2                  "String 2"          { channel="coap:coapdevice:device1:string1" }
 
 // vim: syntax=Xtend syntax=openhab
