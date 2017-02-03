@@ -3,7 +3,7 @@
 //astro:moon:home  [ geolocation="52.5200066,13.4049540", interval=60 ]
 //ntp:ntp:demo [ hostname="nl.pool.ntp.org", refreshInterval=60, refreshNtp=30 ]
 
-coap:coapdevice:dtlsdevice1 [ip="127.0.0.1", enableDtls="true", identity="Client_identity", secret="secretPSK", location="Room", refresh=30]{
+coap:coapdevice:dtlspskdevice1 [ip="127.0.0.1", dtlsMode="dtlsModePsk", identity="Client_identity", secret="secretPSK", location="Room", refresh=30]{
     Channels:
         Type switch : led1 "Led1"
         Type switch : led2 "Led2"
@@ -11,6 +11,13 @@ coap:coapdevice:dtlsdevice1 [ip="127.0.0.1", enableDtls="true", identity="Client
 }
 
 coap:coapdevice:device1 [ip="127.0.0.2", enableDtls="false", identity="", secret="", location="Room", refresh=30]{
+    Channels:
+        Type switch : led1 "Led1"
+        Type switch : led2 "Led2"
+        Type string : string1 "String1"
+}
+
+coap:coapdevice:device1 [ip="127.0.0.3", dtlsMode="dtlsModeRpk", identity="", secret="", location="Room", refresh=30]{
     Channels:
         Type switch : led1 "Led1"
         Type switch : led2 "Led2"
