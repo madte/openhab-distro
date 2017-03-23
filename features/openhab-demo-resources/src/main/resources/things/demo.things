@@ -24,4 +24,9 @@ coap:coapdevice:dtlsrpkdevice1 [ip="[0:0:0:0:0:ffff:7f00:3]", dtlsMode="dtlsMode
        Type string : string1 "String1"
 }
 
+coap:coapdevice:nrf52 [ip="[2001:db8::225:19ff:fe64:c216]", dtlsMode="", identity="", secret="", location="Room", refresh=30]{
+    Channels:
+        Type switch : led3 "Led3"
+       
+}
 // vim: syntax=Xtend syntax=openhab

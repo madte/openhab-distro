@@ -137,4 +137,8 @@ Switch Led5                     "Led 5"             { channel="coap:coapdevice:d
 Switch Led6                     "Led 6"             { channel="coap:coapdevice:dtlsrpkdevice1:led2" }
 String String3                  "String 3"          { channel="coap:coapdevice:dtlsrpkdevice1:string1" }
 
+Switch Led7                     "Led 7"             { channel="coap:coapdevice:nrf52:led3" }
+
+
+
 // vim: syntax=Xtend syntax=openhab
